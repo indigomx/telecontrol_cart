@@ -8,9 +8,6 @@
 .idea
 .loadpath
 .project
-public/dispatch.cgi
-public/dispatch.fcgi
-public/dispatch.rb
 httpd
 pgsql
 config/*-public.asc
@@ -22,11 +19,8 @@ db/schema.rb
 doc/**/*
 lib/products_index_profiler.rb
 log/*.log
+log
 pkg
-public/assets
-public/attachments
-public/blank_iframe.html
-public/ckeditora
 sandbox
 spree_dev
 spree_test
@@ -34,8 +28,6 @@ testapp
 tmp
 vendor/rails
 vendor/extensions/google_base
-public/google_base.xml
-public/template_google_base.xml
 coverage/*
 var
 TAGS
@@ -45,4 +37,4 @@ tags
 *.swp
 rerun.txt
 test_app
-public
+/public
