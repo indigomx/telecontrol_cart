@@ -12,6 +12,7 @@ config/*-public.asc
 config/database.yml
 db/*.sql
 db/schema.rb
+db/data.yml
 doc/**/*
 log
 tmp
@@ -21,4 +22,3 @@ nbproject
 *.swp
 public
 vendor/plugins/yaml_db
-db/data.yml
