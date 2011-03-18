@@ -20,5 +20,9 @@ coverage/*
 var
 nbproject
 *.swp
-public
+public/assets/*
+public/images/*
+public/stylesheets/*
+public/javascripts/*
+public/*.ico
 vendor/plugins/yaml_db
