@@ -2,7 +2,7 @@ require 'spree/extension'
 
 all_locale_paths = Spree::ExtensionLoader.load_extension_roots.dup << SPREE_ROOT
 
-AVAILABLE_LOCALES = {}
+AVAILABLE_LOCALES = {'mx'=>'Español'}
 
 all_locale_paths.each do |path|
 	path = File.join(path, 'config', 'locales')

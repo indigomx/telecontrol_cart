@@ -194,11 +194,11 @@ mx:
         one: "Tarifa de impuesto"
         other: "Tarifa de impuestos"        
       taxon: 
-        one: "Taxón"
-        other: "Taxones"
+        one: "Categoría"
+        other: "Categorías"
       taxonomy: 
-        one: "Taxonomía"
-        other: "Taxonomías"
+        one: "Categoría"
+        other: "Categorías"
       user: 
         one: Usuario
         other: Usuarios
@@ -231,7 +231,7 @@ mx:
   allow_backorders: "Permitir devoluciones"
   allow_ssl_to_be_used_when_in_developement_and_test_modes: Permitir el uso de SSL en los modos de desarrollo y prueba
   allow_ssl_to_be_used_when_in_production_mode: Permitir el uso de SSL en produccion        
-  allowed_ssl_in_production_mode: "Permitir {{not}} usar SSL en modo Producción"
+  allowed_ssl_in_production_mode: "Permitir %{not} usar SSL en modo Producción"
   already_registered: "¿Ya estas registrado?"
   alternative_phone: "Teléfono alternativo"
   amount: Cantidad
@@ -242,18 +242,18 @@ mx:
   are_you_sure_delete_image: "¿Está seguro de que quiere eliminar esta imágen?"
   are_you_sure_option_type: "¿Está seguro de que quiere eliminar este tipo de opción?"
   are_you_sure_you_want_to_capture: "¿Estás seguro de que deseas cobrar?"
-  assign_taxon: "Asignar Taxon"
-  assign_taxons: "Asignar Taxones"
+  assign_taxon: "Asignar Categoría"
+  assign_taxons: "Asignar Categorías"
   authorization_failure: "Fallo de autorización"  
   authorized: Autorizado
   available_on: "Disponible desde (mm/dd/aaaa)"
-  available_taxons: "Taxones disponibles"
+  available_taxons: "Categorías disponibles"
   awaiting_return: Awaiting Return
   back: "Atrás"
   back_end: Atrás
   back_to_store: "Volver a la tienda"
   backordered: Devuelto
-  backordering_is_allowed: "Devoluciones {{not}} permitidas"
+  backordering_is_allowed: "Devoluciones %{not} permitidas"
   balance_due: "Balance"
   best_selling_products: "Productos Mejor Vendidos"
   best_selling_taxons: "Categorías Mejor Vendidas"
@@ -311,7 +311,7 @@ mx:
   copy_all_mails_to: Copiar todos los correos a
   cost_price: "Costo"
   count: Cuenta
-  count_of_reduced_by: "número de '{{name}}' reducido por {{count}}"
+  count_of_reduced_by: "número de '%{name}' reducido por %{count}"
   country: "País"
   country_based: "País base"
   coupon: "Cupón"                                                                             
@@ -513,8 +513,8 @@ mx:
   new_state: "Nuevo estado"
   new_tax_category: "Nuevo Impuesto"
   new_tax_rate: "Nueva valor de impuesto"
-  new_taxon: "Nuevo Taxón"
-  new_taxonomy: "Nueva Categoría"
+  new_taxon: "Nueva Categoría"
+  new_taxonomy: "Nuevas Categorías"
   new_tracker: New Tracker
   new_user: "Nuevo usuario"
   new_variant: "Nueva Variante"
@@ -559,7 +559,7 @@ mx:
   order_processed_but_following_items_are_out_of_stock: "Su orden fué recibida, pero los siguientes artículos están fuera de inventario:"
   order_processed_successfully: "Su pedido se ha procesado correctamente"
   order_summary: Resumen de orden
-  order_sure_want_to: "Seguro que desea {{event}} esta orden?"
+  order_sure_want_to: "Seguro que desea %{event} esta orden?"
   order_total: "Total del pedido"
   order_total_message: "El importe total cargado a su tarjeta de crédito será"
   order_updated: "Pedido actualizado"
@@ -601,7 +601,7 @@ mx:
   preview: Vista preeliminar
   previous: Anterior
   price: Precio
-  price_with_vat_included: "{{price}} (incluye. IVA)"
+  price_with_vat_included: "%{price} (incluye. IVA)"
   problem_authorizing_card: "Problema autorizando la tarjeta"
   problem_capturing_card: "Problema al capturar la tarjeta"
   problems_processing_order: "Hemos tenido problemas al procesar su pedido"
@@ -623,8 +623,8 @@ mx:
         description: "Productos seleccionados basados en nombre, descripción y palabras clave"
         name: "Búsqueda de texto"
       taxon:
-        description: "Productos seleccionados basados en taxón"
-        name: Taxon
+        description: "Productos seleccionados basados en categoría"
+        name: Categoría
       values:
         description: "Productos seleccionados basados en propiedades"
         name: Valores
@@ -663,9 +663,9 @@ mx:
         sentence: nombre o palabras clave contienen <em>%s</em>
       in_taxons:
         args:
-          "taxon_names": "Nombres de Taxones"
-        description: "Los nombres de los taxones deben separarse con comas(ej. adidas,zapatos)"
-        name: "En los taxones y sus descendientes"
+          "taxon_names": "Nombres de Categorías"
+        description: "Los nombres de las categorías deben separarse con comas(ej. adidas,zapatos)"
+        name: "En las categorías y sus descendientes"
         sentence: en <em>%s</em> y todos sus descendientes
       master_price_gte:
         args:
@@ -688,7 +688,7 @@ mx:
         sentence: precio entre <em>%.2f</em> y <em>%.2f</em>
       taxons_name_eq:
         args:
-          taxon_name: "Nombre de taxón"
+          taxon_name: "Nombre de Categoría"
         description: "En el taxón específico, sin descendientes"
         name: "En el taxón(sin sus descendientes)"
         sentence: en <em>%s</em>
@@ -725,7 +725,7 @@ mx:
         name: "Con propiedad y valor"
         sentence: con la propiedad <em>%s</em> y el valor <em>%s</em>
   products: Productos
-  products_with_zero_inventory_display: "Productos con cero en el inventario {{not}} serán mostrados"
+  products_with_zero_inventory_display: "Productos con cero en el inventario %{not} serán mostrados"
   properties: "Propiedades"
   property: "Propiedad"
   prototype: Prototipo
@@ -777,7 +777,7 @@ mx:
   scope: Busqueda
   scopes: Busquedas
   search: Buscar
-  search_results: "Resultados para '{{keywords}}'"
+  search_results: "Resultados para '%{keywords}'"
   secure_connection_type: "Conexión segura"
   secure_creditcard: Tarjeta de crédito segura
   select: Seleccionar
@@ -812,7 +812,7 @@ mx:
   shipping_rates: "Costos de envío"
   shipping_rates_description: "Manejar los costos de envío"
   shipping_total: "Total del envío"
-  shop_by_taxonomy: "{{taxonomy}}"
+  shop_by_taxonomy: "Ver por %{taxonomy}"
   shopping_cart: "Carrito de compras"
   show: Mostrar
   show_active: "Mostrar activos"
@@ -821,7 +821,7 @@ mx:
   show_only_complete_orders: "Mostrar solo los pedidos completados"
   show_out_of_stock_products: "Mostrar productos sin existencía"
   show_price_inc_vat: "Ver precios incluyendo el IVA"
-  showing_first_n: "Mostrar el primero {{n}}"
+  showing_first_n: "Mostrar el primero %{n}"
   sign_up: Registrarme
   site_name: "Nombre del sitio"
   site_url: "URL del sitio"
@@ -870,14 +870,14 @@ mx:
   tax_settings_description: "Establecer la configuración de los Impuestos"
   tax_total: "Total impuestos"
   tax_type: "Tipo de impuesto"
-  taxon: Taxon
-  taxon_edit: Editar Taxon
-  taxonomies: Categorías
+  taxon: "Categoría"
+  taxon_edit: "Editar Categoría"
+  taxonomies: "Categorías"
   taxonomies_setting_description: "Crear y manejar categorías"
   taxonomy_edit: "Editar categorías"
   taxonomy_tree_error: "La solicitud no ha podido ser aceptada y la configuración ha sido de vuelta a su estado original, por favor intenta nuevamente."
   taxonomy_tree_instruction: "* Click derecho una para agregar una subsección en la configuración, para agregar al menu, borrar u ordenar."
-  taxons: Taxones
+  taxons: Categorías
   test: "Prueba"
   test_mode: Modo de prueba
   thank_you_for_your_order: "Gracias por su pedido"

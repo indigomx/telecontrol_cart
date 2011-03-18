@@ -40,14 +40,12 @@
 
     <div class="<%= 'with-sidebar ' unless @content_for_sidebar.blank? %> clear" id="content">
 
-
       <% if flash[:error] %>
       <div class="flash error"><%= flash[:error] %></div>
       <% end %>
       <% if flash[:notice] %>
       <div class="flash notice"><%= flash[:notice] %></div>
       <% end %>
-
 
       <%= yield %>
 
